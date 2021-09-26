@@ -761,33 +761,33 @@
 # lst_str = ', '.join(lst)
 # print(lst_str)
 #----------------------------------calculator
-import sys, os
-operator = input('Что нужно сделать?\n''+\n''-\n''*\n''/\n''Ввод:')
-num_1 = 0
-num_2 = 0
-while True:
-    try:
-        num_1 = float(input('Введите первое число:'))
-    except ValueError:
-        print('Необходимо ввести число!')
-    try:
-        num_2 = float(input('Введите второе число:'))
-    except ValueError:
-        print('Необходимо ввести число!')
-    else:
-        break
-
-result = 0
-
-if operator == '+':
-    result = num_1 + num_2
-elif operator == '-':
-    result = num_1 - num_2
-elif operator == '*':
-    result = num_1 * num_2
-elif operator == '/':
-    result = num_1 / num_2
-else:
-    print('Вы ввели неверный оператор!')
-print(result)
+# import sys, os
+# operator = input('Что нужно сделать?\n''+\n''-\n''*\n''/\n''Ввод:')
+# num_1 = 0
+# num_2 = 0
+# while True:
+#     try:
+#         num_1 = float(input('Введите первое число:'))
+#     except ValueError:
+#         print('Необходимо ввести число!')
+#     try:
+#         num_2 = float(input('Введите второе число:'))
+#     except ValueError:
+#         print('Необходимо ввести число!')
+#     else:
+#         break
+#
+# result = 0
+#
+# if operator == '+':
+#     result = num_1 + num_2
+# elif operator == '-':
+#     result = num_1 - num_2
+# elif operator == '*':
+#     result = num_1 * num_2
+# elif operator == '/':
+#     result = num_1 / num_2
+# else:
+#     print('Вы ввели неверный оператор!')
+# print(result)
 
