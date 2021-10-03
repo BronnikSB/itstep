@@ -824,7 +824,8 @@
 # for new_str in lst_two:
 #     new_str += ','
 #     print(new_str)
-##--------------------------------------------Каждое предложение с заглавной буквы
+##-----------------------------------Самостоятельная работа 30.09.21
+# Каждое предложение с заглавной буквы
 input_use = list(input('Введите текст:'))
 
 input_use[0] = input_use[0].upper()
@@ -832,7 +833,27 @@ separator = ['.', '!', '?']
 len_input_use = len(input_use)
 for i in range(len_input_use):
     if input_use[i] in separator:
-        input_use[i+1] = input_use[i+1].upper()
+        input_use[i+1] = input_use[i + 1].upper()
 print(*input_use, end='', sep='')
-
-
+#----------Количество цифр в строке
+num = [
+    int(i)
+    for i in input_use
+    if i.isdigit()
+]
+print('\nКоличество цифр в строке:', len(num))
+#----------------Количество знаков препинания
+punctuation = ['.', ',', '?', '!', '-', ':', ';', '(', ')', '"', "'"]
+punctuation_number = 0
+for i in range(len_input_use):
+    if input_use[i] in punctuation:
+        punctuation_number += 1
+print('Количество знаков препинания:', punctuation_number)
+#-------------------Ищем количество символов в строке
+num = list(input('Введите символ:'))
+num_sought = input('Введите искомое число:')
+number_sought = 0
+for i in num:
+    if i == num_sought:
+        number_sought += 1
+print('Количество символов', num_sought, 'равно', number_sought)
