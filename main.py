@@ -824,6 +824,15 @@
 # for new_str in lst_two:
 #     new_str += ','
 #     print(new_str)
-##--------------------------------------------
+##--------------------------------------------Каждое предложение с заглавной буквы
+input_use = list(input('Введите текст:'))
+
+input_use[0] = input_use[0].upper()
+separator = ['.', '!', '?']
+len_input_use = len(input_use)
+for i in range(len_input_use):
+    if input_use[i] in separator:
+        input_use[i+1] = input_use[i+1].upper()
+print(*input_use, end='', sep='')
 
 

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../functionPython/.idea/functionPython.iml" filepath="$PROJECT_DIR$/../functionPython/.idea/functionPython.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/itstep.iml" filepath="$PROJECT_DIR$/.idea/itstep.iml" />
       <module fileurl="file://$PROJECT_DIR$/../pyTurtle/.idea/pyTurtle.iml" filepath="$PROJECT_DIR$/../pyTurtle/.idea/pyTurtle.iml" />
       <module fileurl="file://$PROJECT_DIR$/../pythonProject1/.idea/pythonProject1.iml" filepath="$PROJECT_DIR$/../pythonProject1/.idea/pythonProject1.iml" />
