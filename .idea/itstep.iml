@@ -11,5 +11,7 @@
     <orderEntry type="module" module-name="pythonProject" />
     <orderEntry type="module" module-name="pythonProject1" />
     <orderEntry type="module" module-name="functionPython" />
+    <orderEntry type="module" module-name="TestWebPy" />
+    <orderEntry type="module" module-name="TensorAutomationPy" />
   </component>
 </module>

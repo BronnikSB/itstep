@@ -823,34 +823,161 @@
 #     print(new_str)
 # #-----------------------------------Самостоятельная работа 30.09.21
 #Каждое предложение с заглавной буквы
-input_use = list(input('Введите текст:'))
+# input_use = list(input('Введите текст:'))
+#
+# input_use[0] = input_use[0].upper()
+# separator = ['.', '!', '?']
+# len_input_use = len(input_use)
+# for i in range(len_input_use):
+#     if input_use[i] in separator:
+#         input_use[i+1] = input_use[i + 1].upper()
+# print(*input_use, end='', sep='')
+# #----------Количество цифр в строке
+# num = [
+#     int(i)
+#     for i in input_use
+#     if i.isdigit()
+# ]
+# print('\nКоличество цифр в строке:', len(num))
+# #----------------Количество знаков препинания
+# punctuation = ['.', ',', '?', '!', '-', ':', ';', '(', ')', '"', "'"]
+# punctuation_number = 0
+# for i in range(len_input_use):
+#     if input_use[i] in punctuation:
+#         punctuation_number += 1
+# print('Количество знаков препинания:', punctuation_number)
+# #-------------------Ищем количество символов в строке
+# num = list(input('Введите символ:'))
+# num_sought = input('Введите искомое число:')
+# number_sought = 0
+# for i in num:
+#     if i == num_sought:
+#         number_sought += 1
+# print('Количество символов', num_sought, 'равно', number_sought)
+##-----------------------Срезы
+# txt = 'Hello World'
+# print(txt[0:5])
+# print(txt[1])
+# print(txt[0:11:2])
+# print(txt[0])
+# print(txt[-1])
 
-input_use[0] = input_use[0].upper()
-separator = ['.', '!', '?']
-len_input_use = len(input_use)
-for i in range(len_input_use):
-    if input_use[i] in separator:
-        input_use[i+1] = input_use[i + 1].upper()
-print(*input_use, end='', sep='')
-#----------Количество цифр в строке
-num = [
-    int(i)
-    for i in input_use
-    if i.isdigit()
-]
-print('\nКоличество цифр в строке:', len(num))
-#----------------Количество знаков препинания
-punctuation = ['.', ',', '?', '!', '-', ':', ';', '(', ')', '"', "'"]
-punctuation_number = 0
-for i in range(len_input_use):
-    if input_use[i] in punctuation:
-        punctuation_number += 1
-print('Количество знаков препинания:', punctuation_number)
-#-------------------Ищем количество символов в строке
-num = list(input('Введите символ:'))
-num_sought = input('Введите искомое число:')
-number_sought = 0
-for i in num:
-    if i == num_sought:
-        number_sought += 1
-print('Количество символов', num_sought, 'равно', number_sought)
+
+import random
+
+
+# lst_rand = []
+# for i in range(1, 10):
+#     lst_rand.append(random.randint(-5, 5))
+# print(lst_rand)
+#
+# lst_rand_new = [-1, 2, 4, -4, -2, 5, 2, 3, 5]
+# lst_rand = lst_rand_new[1:5]
+# lst_rand.append(lst_rand_new[6])
+#
+# print(lst_rand)
+# lst = []
+# for i in range(-10, 10):
+#     lst.append(i)
+# print(lst[::2])
+# print(lst[::-2])
+# print(lst[0:10])
+# print(lst[10:20])
+##-----------------function
+# def get_name():
+#     name = input('Введите имя:')
+#     return print(name)
+# get_name()
+
+# def test_function(a,b):
+#     summa = a + b
+#     return summa#print(summa)
+#
+# # test_function(10, 20)
+# #print(test_function(5, 5))
+##-------------Задача 1 07.10
+# def test_function(a, b):
+#     summa = a + b
+#     return print(f'Сумма чисел равна {summa}')
+#
+#
+# def test_function_diff(a, b):
+#     diff = a-b
+#     return print(f'Разность чисел равна {diff}')
+#
+#
+# def test_function_division(a, b):
+#     division = a/b
+#     return print(f'a делённое на b равно {division}')
+#
+#
+# def test_function_degree(a, b):
+#     degree = a**b
+#     return print(f'a в степени b равно {degree}')
+#
+#
+# a = int(input(''))
+# b = int(input(''))
+# test_function(a, b)
+# a = int(input(''))
+# b = int(input(''))
+# test_function_diff(a, b)
+# a = int(input(''))
+# b = int(input(''))
+# test_function_division(a, b)
+# a = int(input(''))
+# b = int(input(''))
+# test_function_degree(a, b)
+##-----------------------Задача 2 07.10
+
+
+# def text():
+#     a = "“Don't let the noise of others' opinions \ndrown out your own inner voice.”"
+#     b = "\n                          Steve Jobs"
+#     return a+b
+#
+#
+# print(text())
+
+
+##-------------Задача 3 07.10
+
+
+# a = input('Add number')
+# b = input('Add number')
+# c = input('Add number')
+# d = input('Add number')
+#
+#
+# def max4(a, b, c, d):
+#     return max(a, b, c, d)
+#
+#
+# print(max4(a, b, c, d))
+#-------------Задача №4 07.10
+
+
+# def odd_numbers(a, b):
+#     """Функция считает сумму между числами"""
+#     lst = []
+#     for i in range(a + 1, b):
+#         lst.append(i)
+#     return sum(lst)
+#
+#
+# print(odd_numbers(1, 5))
+#---------Задача № 5 07.10
+
+# number_use = list(input('Введите шестизначное число:'))
+#
+#
+# def happiness(a):
+#     """Функция находит счастливое число"""
+#     for i in range(len(a)):
+#         a[i] = int(a[i])
+#     if sum(a[0:3]) == sum(a[3:6]):
+#         return True
+#     return False
+#
+#
+# print(happiness(number_use))
