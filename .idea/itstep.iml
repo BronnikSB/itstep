@@ -13,5 +13,6 @@
     <orderEntry type="module" module-name="functionPython" />
     <orderEntry type="module" module-name="TestWebPy" />
     <orderEntry type="module" module-name="TensorAutomationPy" />
+    <orderEntry type="module" module-name="Tensor-Studies-" />
   </component>
 </module>
