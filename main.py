@@ -981,3 +981,139 @@ import random
 #
 #
 # print(happiness(number_use))
+
+#----------Task 1
+
+# def text_format():
+#     """функция форматирования текста"""
+#     a = "“Don't compare yourself with anyone in this world…\nif you do so, you are insulting yourself.”\n"
+#     b = '\t' * 9
+#     c = 'Bill Gates'
+#     return a + b + c
+#
+#
+# print(text_format())
+#
+# #----------Task 2
+#
+# num_one = int(input('Введите первое число:'))
+# num_two = int(input('Введите второе число:'))
+# sum_even_range = 0
+#
+#
+# def sum_even(start, stop, summa):
+#     """Функция находит сумму чётных чисел
+#     в диапазоне от a до b и содержит три аргумента,
+#     где start - начало диапазона(не включает первый элемент),
+#     stop - конец, summa - сумма четных чисел в диапазоне"""
+#     for i in range(start + 1, stop):
+#         if i % 2 == 0:
+#             summa += i
+#     return summa
+#
+#
+# print(f'Сумма чётных чисел в диапазоне от {num_one} '
+#       f'до {num_two} равна {sum_even(num_one, num_two, sum_even_range)}')
+
+#----------Task 3
+# height = int(input("Введите длину стороны квадрата: "))
+# symbol = input("Введите символ для рисования квадрата: ")
+# fullness = input("Заполнить квадрат?(Да/Нет)")
+#
+#
+# def square_construction(a, b, c):
+#     """Функция строит квадрат по заданному размеру и символу.
+#     Принимает три аргумента, где
+#     a - длинна стороны квадрата
+#     b - символ, с помощью которого будет нарисован квадрат
+#     с - """
+#     for i in range(a):
+#         if i == 0 or i == a - 1:
+#             for j in range(a + 1): #top and bottom
+#                 print(b + ' ', end='')
+#         else:
+#             print(b + ' ',  end='')# right and left
+#             for j in range(a - 1):
+#                 if c == 'Да':# fullness
+#                     print(b, end=' ')
+#                 elif c == 'Нет':
+#                     print('  ', end='')
+#             print(b, end='')
+#         print()
+#
+#
+# square_construction(height, symbol, fullness)
+
+#----------Task 4
+
+# def min_five(a, b, c, d, e):
+#     """Функция принимает 5 аргументов
+#     в виде натуральных чисел и выводит минимальное из них"""
+#     lst = [a, b, c, d, e]
+#     minimum_number = lst[0]
+#     for i in range(len(lst)):
+#         if lst[i] < minimum_number:
+#             minimum_number = lst[i]
+#     print(minimum_number)
+#
+#
+# min_five(6, 2, 1, 4, 0)
+
+#----------Task 5
+
+
+# def multiply_numbers_range(a, b):
+#     """Функция выводит произведение чисел
+#     в заданном диапазоне, где
+#     a - начало диапазона
+#     b - конец диапазона"""
+#     lst = [a, b]
+#     multiply = 1
+#     if a > b:
+#         lst = [b, a]
+#     for i in range(lst[0] + 1, lst[1]):
+#         multiply *= i
+#     print(multiply)
+#
+#
+# multiply_numbers_range(5, 1)
+
+#----------Task 6
+
+# def len_num(a):
+#     """Функция находит длину натураьного числа"""
+#     str(a)
+#     print(len(str(a)))
+#
+#
+# len_num(1223423)
+
+#----------Task 7
+
+
+# def palindrome(a):
+#     """Функция проверяет является ли число Палидромом,
+#     где a - принимаемое значение"""
+#     num_palindrome = str(a)
+#     if num_palindrome[0:] == num_palindrome[::-1]:
+#         return True
+#     return False
+#
+#
+# print(palindrome(345444))
+
+#----------Classwork
+#
+#
+# def factorial(num):
+#     """Функция находит факториал числа"""
+#     for i in range(1, num):
+#         num *= i
+#     print(num)
+#
+#
+# factorial(6)
+
+
+
+
