@@ -14,5 +14,6 @@
     <orderEntry type="module" module-name="TestWebPy" />
     <orderEntry type="module" module-name="TensorAutomationPy" />
     <orderEntry type="module" module-name="Tensor-Studies-" />
+    <orderEntry type="module" module-name="Algorithms" />
   </component>
 </module>

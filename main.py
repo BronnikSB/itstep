@@ -1114,6 +1114,82 @@ import random
 #
 # factorial(6)
 
+# def factorial(x):
+#     if x == 0:
+#         return 1
+#     return x * factorial(x-1)
+#
+#
+# print(factorial(5))
+#
+#
+# def exponentiation(a, b):
+#     if b == 0:
+#         return 1
+#     return a * exponentiation(a, b - 1)
+#
+#
+# print(exponentiation(2, 2))
+
+#----------Class
+
+# class Students():
+#
+#     def __init__(self, name, last_name, b_day, telephone, city, adress): #конструктор характеристик/свойств класса
+#         self.name = name
+#         self.last_name = last_name
+#         self.b_day = b_day
+#         self.telephone = telephone
+#         self.city = city
+#         self.adress = adress
+#
+#     def print_info(self):
+#         return (self.name, self.last_name, self.b_day, self.telephone, self.city, self.adress)
+#
+#
+#     def lesson(self):
+#         return print("Мы изучали классы")
+#
+#
+# S1 = Students("Nastya", "Zhivtsova", "21 october 1995", "+79159605780", "Yaroslavl", "My homeadress")
+#
+# print(S1.print_info())
+#
+# S1.lesson()
+#----------Task 14.10.21
+city = input('City:')
+region = input('Region:')
+country = input('Country:')
+population = input('People:')
+_index = input('Index:')
+_city_code = input('Telephone code:')
+
+
+class Town():
+
+    def __init__(self, city_name, region_name, country_name, people, index, city_code):
+        self.city_name = city_name
+        self.region_name = region_name
+        self.country_name = country_name
+        self.people = people
+        self.index = index
+        self.city_code = city_code
+
+    def print_info(self):
+        return f'Город: {self.city_name}, \nРегион: {self.region_name}, \nСтрана: {self.country_name}, ' \
+               f'\nНаселение: {self.people}, \nИндекс: {self.index}, \nКод города: {self.city_code}'
+
+
+S1 = Town(city, region, country, population, _index, _city_code)
+
+print(S1.print_info())
+
+
+
+
+
+
+
 
 
 
