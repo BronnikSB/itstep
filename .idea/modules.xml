@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Tensor-Studies-/.idea/Tensor-Studies-.iml" filepath="$PROJECT_DIR$/../Tensor-Studies-/.idea/Tensor-Studies-.iml" />
       <module fileurl="file://$PROJECT_DIR$/../TensorAutomationPy/.idea/TensorAutomationPy.iml" filepath="$PROJECT_DIR$/../TensorAutomationPy/.idea/TensorAutomationPy.iml" />
       <module fileurl="file://$PROJECT_DIR$/../TestWebPy/.idea/TestWebPy.iml" filepath="$PROJECT_DIR$/../TestWebPy/.idea/TestWebPy.iml" />
       <module fileurl="file://$PROJECT_DIR$/../functionPython/.idea/functionPython.iml" filepath="$PROJECT_DIR$/../functionPython/.idea/functionPython.iml" />
