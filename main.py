@@ -863,9 +863,9 @@
 # print(txt[-1])
 
 
-import random
-
-
+# import random
+#
+#
 # lst_rand = []
 # for i in range(1, 10):
 #     lst_rand.append(random.randint(-5, 5))
@@ -1129,7 +1129,15 @@ import random
 # print('Test')
 #----------task 1/17.10.21
 
-auto = input(f"Введите марку автомобиля:")
+auto_info = input(f"Введите марку автомобиля:")
+info_str = input(f"Какую информацию вы хотите узнать?\n"
+                 f"1.Модель\n"
+                 f"2.Год\n"
+                 f"3.Производитель\n"
+                 f"4.Объем двигателя\n"
+                 f"5.Цена\n"
+                 f"6.Полный список\n"
+                 f"Ввод:")
 
 
 class Auto():
@@ -1141,15 +1149,34 @@ class Auto():
         self.price = price
 
     def print_info(self):
-        return f"Модель: {self.model}\nГод выпуска: {self.year}\nОбъем двигателя: {self.engine_volume} " \
-               f"\nЦена: {self.price}"
+        if info_str == "1":
+            return f"\nМодель: {self.model}"
+        elif info_str == "2":
+            return f"Год выпуска: {self.year}"
+        elif info_str == "3":
+            return f"Объем двигателя: {self.engine_volume}"
+        elif info_str == "4":
+            return f"\nЦена: {self.price}"
+        elif info_str == "5":
+            return f"Производитель: {self.manufacturer}"
+        elif info_str == "6":
+            return f"Модель: {self.model}\n" \
+                   f"Год выпуска: {self.year}\n" \
+                   f"Производитель: {self.manufacturer}\n" \
+                   f"Объем двигателя: {self.engine_volume}\n" \
+                   f"Цена: {self.price}"
+        else:
+            return f"Значение не верно!"
 
 
 A1 = Auto("Bmw M5", "1999", "4.4", "Germany", "900000")
-A2 = Auto("Bmw 530", "2004", "3.2", "Germany", "800000")
+A2 = Auto("Mercedes E500", "1993", "5.0", "Germany", "800000")
 A3 = Auto("Subaru Impreza", "2010", "2.8", "Japan", "1300000")
-if auto == "Bmw":
-    print(A1.print_info(),"\n\n",A2.print_info())
-elif auto == "Subaru":
+
+if auto_info == "Bmw":
+    print(A1.print_info())
+elif auto_info == "Subaru":
     print(A3.print_info())
+elif auto_info == "Mercedes":
+    print(A2.print_info())
 
