@@ -1174,9 +1174,9 @@ A2 = Auto("Mercedes E500", "1993", "5.0", "Germany", "800000")
 A3 = Auto("Subaru Impreza", "2010", "2.8", "Japan", "1300000")
 
 if auto_info == "Bmw":
-    print(A1.print_info())
+    print("\n", A1.print_info())
 elif auto_info == "Subaru":
-    print(A3.print_info())
+    print("\n", A3.print_info())
 elif auto_info == "Mercedes":
-    print(A2.print_info())
+    print("\n", A2.print_info())
 
