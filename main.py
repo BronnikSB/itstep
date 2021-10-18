@@ -1149,21 +1149,22 @@ class Auto():
         self.price = price
 
     def print_info(self):
+        """Функция определяет какой запрос ввел пользователь"""
         if info_str == "1":
             return f"\nМодель: {self.model}"
         elif info_str == "2":
-            return f"Год выпуска: {self.year}"
+            return f"\nГод выпуска: {self.year}"
         elif info_str == "3":
-            return f"Объем двигателя: {self.engine_volume}"
+            return f"\nОбъем двигателя: {self.engine_volume}"
         elif info_str == "4":
-            return f"\nЦена: {self.price}"
+            return f"\nПроизводитель: {self.manufacturer}\n"
         elif info_str == "5":
-            return f"Производитель: {self.manufacturer}"
+            return f"\nЦена: {self.price}"
         elif info_str == "6":
             return f"Модель: {self.model}\n" \
                    f"Год выпуска: {self.year}\n" \
-                   f"Производитель: {self.manufacturer}\n" \
                    f"Объем двигателя: {self.engine_volume}\n" \
+                   f"Производитель: {self.manufacturer}\n" \
                    f"Цена: {self.price}"
         else:
             return f"Значение не верно!"
@@ -1172,11 +1173,19 @@ class Auto():
 A1 = Auto("Bmw M5", "1999", "4.4", "Germany", "900000")
 A2 = Auto("Mercedes E500", "1993", "5.0", "Germany", "800000")
 A3 = Auto("Subaru Impreza", "2010", "2.8", "Japan", "1300000")
+# Список имеющихся авто^
 
-if auto_info == "Bmw":
+auto_info = auto_info.upper()
+# Подняли регистр введенного значения
+
+if auto_info == "BMW":
     print("\n", A1.print_info())
-elif auto_info == "Subaru":
+elif auto_info == "SUBARU":
     print("\n", A3.print_info())
-elif auto_info == "Mercedes":
+elif auto_info == "MERCEDES":
     print("\n", A2.print_info())
+# Проверили по какому авто нужно вывести запрос
+
+
+
 
