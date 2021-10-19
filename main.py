@@ -1128,64 +1128,135 @@
 # print(S1.print_info())
 # print('Test')
 #----------task 1/17.10.21
+#
+# auto_info = input(f"Введите марку автомобиля:")
+# info_str = input(f"Какую информацию вы хотите узнать?\n"
+#                  f"1.Модель\n"
+#                  f"2.Год\n"
+#                  f"3.Производитель\n"
+#                  f"4.Объем двигателя\n"
+#                  f"5.Цена\n"
+#                  f"6.Полный список\n"
+#                  f"Ввод:")
+#
+#
+# class Auto():
+#     def __init__(self, model, year, manufacturer, engine_volume, price):
+#         self.model = model
+#         self.year = year
+#         self.manufacturer = manufacturer
+#         self.engine_volume = engine_volume
+#         self.price = price
+#
+#     def print_info(self):
+#         """Функция определяет какой запрос ввел пользователь"""
+#         if info_str == "1":
+#             return f"\nМодель: {self.model}"
+#         elif info_str == "2":
+#             return f"\nГод выпуска: {self.year}"
+#         elif info_str == "3":
+#             return f"\nОбъем двигателя: {self.engine_volume}"
+#         elif info_str == "4":
+#             return f"\nПроизводитель: {self.manufacturer}\n"
+#         elif info_str == "5":
+#             return f"\nЦена: {self.price}"
+#         elif info_str == "6":
+#             return f"Модель: {self.model}\n" \
+#                    f"Год выпуска: {self.year}\n" \
+#                    f"Объем двигателя: {self.engine_volume}\n" \
+#                    f"Производитель: {self.manufacturer}\n" \
+#                    f"Цена: {self.price}"
+#         else:
+#             return f"Значение не верно!"
+#
+#
+# A1 = Auto("Bmw M5", "1999", "4.4", "Germany", "900000")
+# A2 = Auto("Mercedes E500", "1993", "5.0", "Germany", "800000")
+# A3 = Auto("Subaru Impreza", "2010", "2.8", "Japan", "1300000")
+# # Список имеющихся авто^
+#
+# auto_info = auto_info.upper()
+# # Подняли регистр введенного значения
+#
+# if auto_info == "BMW":
+#     print("\n", A1.print_info())
+# elif auto_info == "SUBARU":
+#     print("\n", A3.print_info())
+# elif auto_info == "MERCEDES":
+#     print("\n", A2.print_info())
+# # Проверили по какому авто нужно вывести запрос
 
-auto_info = input(f"Введите марку автомобиля:")
-info_str = input(f"Какую информацию вы хотите узнать?\n"
-                 f"1.Модель\n"
-                 f"2.Год\n"
-                 f"3.Производитель\n"
-                 f"4.Объем двигателя\n"
-                 f"5.Цена\n"
-                 f"6.Полный список\n"
-                 f"Ввод:")
+#----------Task 19.10
 
+# class square():
+#
+#     def __init__(self, side, high):
+#         self.side = side
+#         self.high = high
+#
+#     @staticmethod
+#     def triangle(a, h):
+#         return (a * h)/2
+#
+#     @staticmethod
+#     def square_figure(a, h):
+#         return a * h
+#
+#
+# r = square(10, 5)
+#
+# print(r.triangle(10, 5))
+# print(r.square_figure(4, 6))
 
-class Auto():
-    def __init__(self, model, year, manufacturer, engine_volume, price):
-        self.model = model
-        self.year = year
-        self.manufacturer = manufacturer
-        self.engine_volume = engine_volume
-        self.price = price
+#----------Task
 
-    def print_info(self):
-        """Функция определяет какой запрос ввел пользователь"""
-        if info_str == "1":
-            return f"\nМодель: {self.model}"
-        elif info_str == "2":
-            return f"\nГод выпуска: {self.year}"
-        elif info_str == "3":
-            return f"\nОбъем двигателя: {self.engine_volume}"
-        elif info_str == "4":
-            return f"\nПроизводитель: {self.manufacturer}\n"
-        elif info_str == "5":
-            return f"\nЦена: {self.price}"
-        elif info_str == "6":
-            return f"Модель: {self.model}\n" \
-                   f"Год выпуска: {self.year}\n" \
-                   f"Объем двигателя: {self.engine_volume}\n" \
-                   f"Производитель: {self.manufacturer}\n" \
-                   f"Цена: {self.price}"
-        else:
-            return f"Значение не верно!"
+# class Library:
+#     name = "Centarl"
+#     address = "Yaroslavl"
+#     count = 100
+#
+#     def __init__(self, name, address, books):
+#         self.name = name
+#         self.address = address
+#         self.books = books
+#
+#     def getCount(self):
+#         return self.books
+#
+#     def __add__(self, other):
+#         return Library(self.name, self.address, self.books + other.getCount())
+#
+#
+# b1 = Library("Central", "Yaroslavl", 1200)
+# b2 = Library("Zavolga", "Yaroslavl", 1000)
+# b3 = Library("Zavolga", "Yaroslavl", 3000)
+# b4 = b1 + b2 + b3
+#
+# print(b2.getCount())
+#
+# print(b4.getCount())
 
+#----------Task
 
-A1 = Auto("Bmw M5", "1999", "4.4", "Germany", "900000")
-A2 = Auto("Mercedes E500", "1993", "5.0", "Germany", "800000")
-A3 = Auto("Subaru Impreza", "2010", "2.8", "Japan", "1300000")
-# Список имеющихся авто^
-
-auto_info = auto_info.upper()
-# Подняли регистр введенного значения
-
-if auto_info == "BMW":
-    print("\n", A1.print_info())
-elif auto_info == "SUBARU":
-    print("\n", A3.print_info())
-elif auto_info == "MERCEDES":
-    print("\n", A2.print_info())
-# Проверили по какому авто нужно вывести запрос
-
+# class Number():
+#     def __init__(self, summa, subtract, multiply, divide, ):
+#         self.summa = summa
+#         self.subtract = subtract
+#         self.multiply = multiply
+#         self.divide = divide
+#
+#     def operation_number(self):
+#         return self.summa
+#
+#     def __add__(self, other):
+#         return Number(self.summa + other.operation_number(), self.subtract, self.multiply, self.divide)
+#
+#
+# num_one = Number(22, 32, 43, 54)
+# num_two = Number(25, 34, 45, 65)
+# result = num_two + num_one
+#
+# print(result.operation_number())
 
 
 
