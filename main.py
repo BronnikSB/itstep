@@ -1099,7 +1099,7 @@
 #     return False
 #
 #
-# print(palindrome(345444))
+# print(palindrome(121))
 #----------Class
 #
 # city = input('City:')
@@ -1257,6 +1257,8 @@
 # result = num_two + num_one
 #
 # print(result.operation_number())
+
+
 
 
 
